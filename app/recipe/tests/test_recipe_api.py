@@ -153,5 +153,5 @@ class PrivateRecipeApiTests(TestCase):
         recipe = Recipe.objects.get(id=res.data['id'])
         ingredients = recipe.ingredients.all()
         self.assertEqual(ingredients.count(), 2)
-        self.assertIn(ingredient1, ingredient2)
-        self.assertIn(ingredient2, ingredient2)
+        self.assertIn(ingredient1, ingredients)
+        self.assertIn(ingredient2, ingredients)
