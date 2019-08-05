@@ -20,5 +20,5 @@ RUN mkdir -p val/web/media
 RUN mkdir -p val/web/static
 RUN adduser -D user
 RUN chown -R user:user val/
-RUN chmod -R 755 val/web
+RUN chmod -R 777 val/
 USER user
