@@ -16,9 +16,9 @@ WORKDIR /app
 COPY ./app /app
 
 
-RUN mkdir -p val/web/media
-RUN mkdir -p val/web/static
+RUN mkdir -p /val/web/media
+RUN mkdir -p /val/web/static
 RUN adduser -D user
-RUN chown -R user:user val/
-RUN chmod -R 777 val/
+RUN chown -R user:user /val/
+RUN chmod -R 777 /val/
 USER user
