@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = '/val/web/media'
-STATIC_ROOT = '/val/web/static'
+MEDIA_ROOT = 'val/web/media'
+STATIC_ROOT = 'val/web/static'
 
 AUTH_USER_MODEL = 'core.user'
